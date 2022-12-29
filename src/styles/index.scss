@@ -1,0 +1,130 @@
+$border: 1px solid var(--el-border-color-base);
+
+body,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: block;
+}
+body {
+  font-size: 14px;
+}
+
+.el-overlay-dialog {
+  overflow: hidden;
+}
+.el-dialog__body {
+  overflow: auto;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url('/bg.jpg') no-repeat 0 0;
+  background-size: cover;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.title {
+  font-weight: bold;
+}
+.tips {
+  font-size: 10px;
+  color: gray;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.active {
+  background-color: aliceblue;
+}
+.nodata {
+  flex: 1;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.container {
+  width: 896px;
+  height: 544px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: white;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-from {
+  flex-direction: column;
+  align-items: center;
+
+  .toolbar {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  form {
+    padding-top: 16px;
+    width: 280px;
+  }
+}
+
+.layout {
+  > .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 54px;
+    background-color: black;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px 0 0 8px;
+
+    .el-icon,
+    .el-icon svg {
+      width: 2em;
+      height: 2em;
+    }
+    .el-button {
+      width: 100%;
+    }
+    .el-button + .el-button {
+      margin-left: 0 !important;
+      margin-top: 12px;
+    }
+
+    .name {
+      color: white;
+      max-width: 100%;
+      font-size: 12px;
+    }
+
+    .menu {
+      flex: 1;
+      width: 100%;
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
+
+  > .content {
+    flex: 1;
+    display: flex;
+  }
+}
