@@ -4,7 +4,7 @@ import useStore from '../store/index';
 
 const zimStore = useStore();
 const groupList = zimStore.groupList;
-const groupInfo = reactive({groupID: '', groupName: '', groupNotice: ''});
+const groupInfo = reactive({groupID: '', groupName: '', groupNotice: '', groupAvatarUrl: ''});
 
 onMounted(() => {
     zimStore.getGroupList();
